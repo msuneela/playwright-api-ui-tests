@@ -1,7 +1,14 @@
-$ npm install # Installs test dependencies
+# UI-API automation -PLAYWRIGHT
+  # Clone repo and below commands
 
-$ npx playwright test --ui # Run tests in  browser, This allows to choose which tests can run
-$ npx playwright test # Run tests in headless mode both API and UI
+# Installs test dependencies
+ $ npm install
+  
+# Run tests in  browser, This allows to choose which tests can run
+    $ npx playwright test --ui
+
+ # Run tests in headless mode both API and UI 
+   $ npx playwright test  
 
 --tests
    |--api-test
@@ -14,12 +21,12 @@ $ npx playwright test # Run tests in headless mode both API and UI
    --utils
    |--api-utils.ts
 
-   In api-utils.ts consists of reusable methods for api
+    In api-utils.ts consists of reusable methods for api
 
    --test-data
-      |--expected-api-response.json
+      |--expected-api-response.json # the above file consists of expected response and can use in the test to compare responses.
 
-      the above file consists of expected response and can use in the test to compare responses.
+       
 
 #UI-TESTS and TEST RESULTS
 --config
