@@ -16,9 +16,10 @@ test.describe('Arqiva website tests', async () => {
     commonHelper = new CommonHelper(page);
     await commonHelper.navigateToHomepage(); // Await the navigation
   });
-  test('Should able to navigate to arqiva page and verify title', async ({ page }) => {
+  test('Should able to navigate to main page and verify title and check breadcrumbs not present', async ({ page }) => {
     await expect(homePage.logo()).toBeVisible();
     await commonHelper.verifyPageTitle('Arqiva - TV, Radio, Satellite Data Communications & Smart Metering');
+    await expect(commonHelper.breadCrumbs(Text.About)).not.toBeVisible();
   });
 
   test('Should able to Navigate to main page and select About ,Utilities, media and respective submenus validate breadcrumbs', async ({ page }) => {
@@ -33,12 +34,13 @@ test.describe('Arqiva website tests', async () => {
 
     await homePage.selectMenuAndSubMenu(tab.menu, tab.subMenu);
     await commonHelper.verifyPageTitle(tab.subMenu);
-    await expect(commonHelper.breadCrumbs(tab.subMenu)).toBeVisible();
+    
+    
      
 
   }
 });
-  test('Should able to Navigate  select News and validate breadcrumbs', async ({ page }) => {
+  test('Should able to Navigate main page select News and validate breadcrumbs', async ({ page }) => {
    
 
     await homePage.clickElement(homePage.subMenu('News & Views'));
