@@ -1,87 +1,228 @@
-<testsuites id="" name="" tests="9" failures="0" skipped="0" errors="0" time="4.776309">
-<testsuite name="ui-tests/ui-test.spec.ts" timestamp="2025-02-09T12:08:47.906Z" hostname="chromium" tests="3" failures="0" skipped="0" time="2.604" errors="0">
-<testcase name="Arqiva website tests › Should able to navigate to main page and verify title and check breadcrumbs not present" classname="ui-tests/ui-test.spec.ts" time="0.604">
+<testsuites id="" name="" tests="12" failures="3" skipped="0" errors="0" time="5.815227000000001">
+<testsuite name="api-tests/example-api.spec.ts" timestamp="2025-02-09T19:39:58.505Z" hostname="chromium" tests="1" failures="1" skipped="0" time="0.505" errors="0">
+<testcase name="verify Get Request method matches given expected response" classname="api-tests/example-api.spec.ts" time="0.505">
+<failure message="example-api.spec.ts:5:5 verify Get Request method matches given expected response" type="FAILURE">
+<![CDATA[  [chromium] › api-tests/example-api.spec.ts:5:5 › verify Get Request method matches given expected response 
+
+    Error: apiRequestContext.get: Hostname/IP does not match certificate's altnames: Host: dummy.restapiexample.com. is not in the cert's altnames: DNS:*.webhostingservices.com, DNS:webhostingservices.com
+    Call log:
+      - → GET https://dummy.restapiexample.com/api/v1/employees
+        - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.6943.16 Safari/537.36
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+
+
+       at ../utils/api-utils.ts:12
+
+      10 |     // Reusable method to make a GET request
+      11 |     async get(endpoint: string) {
+    > 12 |         const response = await this.request.get(endpoint);
+         |                                             ^
+      13 |         expect.soft(response.status()).toBe(200); // Ensure the request was successful
+      14 |         return await response.json(); // Return the JSON response
+      15 |     }
+        at ApiUtils.get (/Users/suneela/palywright-api-ui-tests/utils/api-utils.ts:12:45)
+        at /Users/suneela/palywright-api-ui-tests/tests/api-tests/example-api.spec.ts:10:43
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/api-tests-example-api-veri-51ed1-hes-given-expected-response-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/api-tests-example-api-veri-51ed1-hes-given-expected-response-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|api-tests-example-api-veri-51ed1-hes-given-expected-response-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ui-tests/ui-test.spec.ts" timestamp="2025-02-09T19:39:58.505Z" hostname="chromium" tests="3" failures="0" skipped="0" time="3.79" errors="0">
+<testcase name="Arqiva website tests › Should able to navigate to main page and verify title and check breadcrumbs not present" classname="ui-tests/ui-test.spec.ts" time="1.048">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|ui-tests-ui-test-Arqiva-we-6ae22-eck-breadcrumbs-not-present-chromium/test-finished-1.png]]
 
 [[ATTACHMENT|ui-tests-ui-test-Arqiva-we-6ae22-eck-breadcrumbs-not-present-chromium/video.webm]]
+
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-6ae22-eck-breadcrumbs-not-present-chromium/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Arqiva website tests › Should able to Navigate to main page and select About ,Utilities, media and respective submenus validate breadcrumbs" classname="ui-tests/ui-test.spec.ts" time="1.174">
+<testcase name="Arqiva website tests › Should able to Navigate to main page and select About ,Utilities, media and respective submenus validate breadcrumbs" classname="ui-tests/ui-test.spec.ts" time="1.592">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|ui-tests-ui-test-Arqiva-we-0cc1a-bmenus-validate-breadcrumbs-chromium/test-finished-1.png]]
 
 [[ATTACHMENT|ui-tests-ui-test-Arqiva-we-0cc1a-bmenus-validate-breadcrumbs-chromium/video.webm]]
+
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-0cc1a-bmenus-validate-breadcrumbs-chromium/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Arqiva website tests › Should able to Navigate main page select News and validate breadcrumbs" classname="ui-tests/ui-test.spec.ts" time="0.826">
+<testcase name="Arqiva website tests › Should able to Navigate main page select News and validate breadcrumbs" classname="ui-tests/ui-test.spec.ts" time="1.15">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|ui-tests-ui-test-Arqiva-we-20053-ws-and-validate-breadcrumbs-chromium/test-finished-1.png]]
 
 [[ATTACHMENT|ui-tests-ui-test-Arqiva-we-20053-ws-and-validate-breadcrumbs-chromium/video.webm]]
+
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-20053-ws-and-validate-breadcrumbs-chromium/trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="ui-tests/ui-test.spec.ts" timestamp="2025-02-09T12:08:47.906Z" hostname="firefox" tests="3" failures="0" skipped="0" time="5.36" errors="0">
-<testcase name="Arqiva website tests › Should able to navigate to main page and verify title and check breadcrumbs not present" classname="ui-tests/ui-test.spec.ts" time="1.23">
+<testsuite name="api-tests/example-api.spec.ts" timestamp="2025-02-09T19:39:58.505Z" hostname="firefox" tests="1" failures="1" skipped="0" time="0.508" errors="0">
+<testcase name="verify Get Request method matches given expected response" classname="api-tests/example-api.spec.ts" time="0.508">
+<failure message="example-api.spec.ts:5:5 verify Get Request method matches given expected response" type="FAILURE">
+<![CDATA[  [firefox] › api-tests/example-api.spec.ts:5:5 › verify Get Request method matches given expected response 
+
+    Error: apiRequestContext.get: Hostname/IP does not match certificate's altnames: Host: dummy.restapiexample.com. is not in the cert's altnames: DNS:*.webhostingservices.com, DNS:webhostingservices.com
+    Call log:
+      - → GET https://dummy.restapiexample.com/api/v1/employees
+        - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+
+
+       at ../utils/api-utils.ts:12
+
+      10 |     // Reusable method to make a GET request
+      11 |     async get(endpoint: string) {
+    > 12 |         const response = await this.request.get(endpoint);
+         |                                             ^
+      13 |         expect.soft(response.status()).toBe(200); // Ensure the request was successful
+      14 |         return await response.json(); // Return the JSON response
+      15 |     }
+        at ApiUtils.get (/Users/suneela/palywright-api-ui-tests/utils/api-utils.ts:12:45)
+        at /Users/suneela/palywright-api-ui-tests/tests/api-tests/example-api.spec.ts:10:43
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/api-tests-example-api-veri-51ed1-hes-given-expected-response-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/api-tests-example-api-veri-51ed1-hes-given-expected-response-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|api-tests-example-api-veri-51ed1-hes-given-expected-response-firefox/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ui-tests/ui-test.spec.ts" timestamp="2025-02-09T19:39:58.505Z" hostname="firefox" tests="3" failures="0" skipped="0" time="7.285" errors="0">
+<testcase name="Arqiva website tests › Should able to navigate to main page and verify title and check breadcrumbs not present" classname="ui-tests/ui-test.spec.ts" time="1.913">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|ui-tests-ui-test-Arqiva-we-6ae22-eck-breadcrumbs-not-present-firefox/test-finished-1.png]]
 
 [[ATTACHMENT|ui-tests-ui-test-Arqiva-we-6ae22-eck-breadcrumbs-not-present-firefox/video.webm]]
+
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-6ae22-eck-breadcrumbs-not-present-firefox/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Arqiva website tests › Should able to Navigate to main page and select About ,Utilities, media and respective submenus validate breadcrumbs" classname="ui-tests/ui-test.spec.ts" time="2.581">
+<testcase name="Arqiva website tests › Should able to Navigate to main page and select About ,Utilities, media and respective submenus validate breadcrumbs" classname="ui-tests/ui-test.spec.ts" time="2.827">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|ui-tests-ui-test-Arqiva-we-0cc1a-bmenus-validate-breadcrumbs-firefox/test-finished-1.png]]
 
 [[ATTACHMENT|ui-tests-ui-test-Arqiva-we-0cc1a-bmenus-validate-breadcrumbs-firefox/video.webm]]
+
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-0cc1a-bmenus-validate-breadcrumbs-firefox/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Arqiva website tests › Should able to Navigate main page select News and validate breadcrumbs" classname="ui-tests/ui-test.spec.ts" time="1.549">
+<testcase name="Arqiva website tests › Should able to Navigate main page select News and validate breadcrumbs" classname="ui-tests/ui-test.spec.ts" time="2.545">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|ui-tests-ui-test-Arqiva-we-20053-ws-and-validate-breadcrumbs-firefox/test-finished-1.png]]
 
 [[ATTACHMENT|ui-tests-ui-test-Arqiva-we-20053-ws-and-validate-breadcrumbs-firefox/video.webm]]
+
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-20053-ws-and-validate-breadcrumbs-firefox/trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="ui-tests/ui-test.spec.ts" timestamp="2025-02-09T12:08:47.906Z" hostname="webkit" tests="3" failures="0" skipped="0" time="3.944" errors="0">
-<testcase name="Arqiva website tests › Should able to navigate to main page and verify title and check breadcrumbs not present" classname="ui-tests/ui-test.spec.ts" time="0.999">
+<testsuite name="api-tests/example-api.spec.ts" timestamp="2025-02-09T19:39:58.505Z" hostname="webkit" tests="1" failures="1" skipped="0" time="0.395" errors="0">
+<testcase name="verify Get Request method matches given expected response" classname="api-tests/example-api.spec.ts" time="0.395">
+<failure message="example-api.spec.ts:5:5 verify Get Request method matches given expected response" type="FAILURE">
+<![CDATA[  [webkit] › api-tests/example-api.spec.ts:5:5 › verify Get Request method matches given expected response 
+
+    Error: apiRequestContext.get: Hostname/IP does not match certificate's altnames: Host: dummy.restapiexample.com. is not in the cert's altnames: DNS:*.webhostingservices.com, DNS:webhostingservices.com
+    Call log:
+      - → GET https://dummy.restapiexample.com/api/v1/employees
+        - user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.2 Safari/605.1.15
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+
+
+       at ../utils/api-utils.ts:12
+
+      10 |     // Reusable method to make a GET request
+      11 |     async get(endpoint: string) {
+    > 12 |         const response = await this.request.get(endpoint);
+         |                                             ^
+      13 |         expect.soft(response.status()).toBe(200); // Ensure the request was successful
+      14 |         return await response.json(); // Return the JSON response
+      15 |     }
+        at ApiUtils.get (/Users/suneela/palywright-api-ui-tests/utils/api-utils.ts:12:45)
+        at /Users/suneela/palywright-api-ui-tests/tests/api-tests/example-api.spec.ts:10:43
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/api-tests-example-api-veri-51ed1-hes-given-expected-response-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/api-tests-example-api-veri-51ed1-hes-given-expected-response-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|api-tests-example-api-veri-51ed1-hes-given-expected-response-webkit/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ui-tests/ui-test.spec.ts" timestamp="2025-02-09T19:39:58.505Z" hostname="webkit" tests="3" failures="0" skipped="0" time="4.921" errors="0">
+<testcase name="Arqiva website tests › Should able to navigate to main page and verify title and check breadcrumbs not present" classname="ui-tests/ui-test.spec.ts" time="1.233">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|ui-tests-ui-test-Arqiva-we-6ae22-eck-breadcrumbs-not-present-webkit/test-finished-1.png]]
 
 [[ATTACHMENT|ui-tests-ui-test-Arqiva-we-6ae22-eck-breadcrumbs-not-present-webkit/video.webm]]
+
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-6ae22-eck-breadcrumbs-not-present-webkit/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Arqiva website tests › Should able to Navigate to main page and select About ,Utilities, media and respective submenus validate breadcrumbs" classname="ui-tests/ui-test.spec.ts" time="1.758">
+<testcase name="Arqiva website tests › Should able to Navigate to main page and select About ,Utilities, media and respective submenus validate breadcrumbs" classname="ui-tests/ui-test.spec.ts" time="1.995">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|ui-tests-ui-test-Arqiva-we-0cc1a-bmenus-validate-breadcrumbs-webkit/test-finished-1.png]]
 
 [[ATTACHMENT|ui-tests-ui-test-Arqiva-we-0cc1a-bmenus-validate-breadcrumbs-webkit/video.webm]]
+
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-0cc1a-bmenus-validate-breadcrumbs-webkit/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Arqiva website tests › Should able to Navigate main page select News and validate breadcrumbs" classname="ui-tests/ui-test.spec.ts" time="1.187">
+<testcase name="Arqiva website tests › Should able to Navigate main page select News and validate breadcrumbs" classname="ui-tests/ui-test.spec.ts" time="1.693">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|ui-tests-ui-test-Arqiva-we-20053-ws-and-validate-breadcrumbs-webkit/test-finished-1.png]]
 
 [[ATTACHMENT|ui-tests-ui-test-Arqiva-we-20053-ws-and-validate-breadcrumbs-webkit/video.webm]]
+
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-20053-ws-and-validate-breadcrumbs-webkit/trace.zip]]
 ]]>
 </system-out>
 </testcase>

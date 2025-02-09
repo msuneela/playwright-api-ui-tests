@@ -7,13 +7,14 @@
    $ npm install
 
  # Run UI tests in headless
-    $ npx playwright test tests/ui
+    $  npm run test-ui
   
 # Run tests in  browser, This allows to choose which tests can run
-    $ npx playwright test --ui
+    $ npm run open-test
 
- # Run tests in headless mode both API and UI , API tests will fail as the url is not valid.
-   $ npx playwright test  
+ # Run tests in headless mode both API and UI , API tests will fail as the url is not valid. After run it takes you to tesr report page
+   $ npm run test 
+   
 
 
 --tests
@@ -36,7 +37,7 @@
 
        
 
-#UI-TESTS and TEST RESULTS
+# UI-TESTS and TEST RESULTS
 --config
   |--config.ts
 --page-objects
@@ -59,6 +60,11 @@ Under test-results htmls folder consists of video and and index.html will have t
 
 ouput.xml can use for ci/cd pipelines
 under test result for each run it creates forde for each test can see videos and screenshots in respective folder.
+
+# TEST RESULTS
+After test run to show html report run below command
+
+$ npm run play-report
 
 # Configure CI/CD Pipeline:
 

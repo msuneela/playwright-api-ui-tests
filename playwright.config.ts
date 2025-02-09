@@ -23,7 +23,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
-    ['html', { outputFolder: 'test-results/html' }], // HTML report
+    ['html', { outputFolder: 'test-results/html' , open: 'never'}], // HTML report
     ['junit', { outputFile: 'test-results/output.xml' }], // JUnit XML report for CI/CD
 ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
@@ -32,7 +32,7 @@ export default defineConfig({
     // baseURL: 'http://127.0.0.1:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    trace: 'on',
         // Capture screenshot after each test failure.
         screenshot: 'on',
 
