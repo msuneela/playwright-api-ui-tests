@@ -1,4 +1,3 @@
-
 import { test, expect } from '@playwright/test';
 import { HomePage } from '../../page-objects/home-page';
 import { CommonHelper } from '../../support/common-helper';
@@ -31,18 +30,11 @@ test.describe('Arqiva website tests', async () => {
 
   // Navigate through each menu and perform check
   for (const tab of tabs) {
-
     await homePage.selectMenuAndSubMenu(tab.menu, tab.subMenu);
     await commonHelper.verifyPageTitle(tab.subMenu);
-    
-    
-     
-
   }
 });
   test('Should able to Navigate main page select News and validate breadcrumbs', async ({ page }) => {
-   
-
     await homePage.clickElement(homePage.subMenu('News & Views'));
     await commonHelper.verifyPageTitle('News & Views');
     await expect(commonHelper.breadCrumbs('News & Views')).toBeVisible();

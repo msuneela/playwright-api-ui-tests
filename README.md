@@ -1,22 +1,30 @@
-# UI-API automation -PLAYWRIGHT
-  # Clone repo and below commands
+# UI-API automation PLAYWRIGHT
+# I have used macOS to run these tests
+  # Clone repo 
+  $ git clone https://github.com/msuneela/playwright-api-ui-tests.git
 
 # Installs test dependencies
- $ npm install
+   $ npm install
+
+ # Run UI tests in headless
+    $ npx playwright test tests/ui
   
 # Run tests in  browser, This allows to choose which tests can run
     $ npx playwright test --ui
 
- # Run tests in headless mode both API and UI 
+ # Run tests in headless mode both API and UI , API tests will fail as the url is not valid.
    $ npx playwright test  
+
 
 --tests
    |--api-test
    |--ui-tests
 
+
+
    The above folder consists of main tests for both api and ui.
 
-   API -TESTS:
+   # API -TESTS:
    I have created dummy api test. It will fail as this URL does not work.
    --utils
    |--api-utils.ts
@@ -56,7 +64,7 @@ under test result for each run it creates forde for each test can see videos and
 
 Use a CI/CD tool like GitHub Actions or GitLab CI/CD to automate the execution of tests.
 
-# Triggers:
+# Trigger build:
 
 CI/CD can configure for below scenarios
 
@@ -82,5 +90,7 @@ Notifications:
 Send notifications (e.g., email, Slack) for test failures or pipeline status.
 
 github actions should have .yml file to achieve ci/cd pipeline and able to configure according to project needs
+
+# I have included example yml as playwright.yml for reference in main project folder
 
   

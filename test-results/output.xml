@@ -1,0 +1,89 @@
+<testsuites id="" name="" tests="9" failures="0" skipped="0" errors="0" time="4.776309">
+<testsuite name="ui-tests/ui-test.spec.ts" timestamp="2025-02-09T12:08:47.906Z" hostname="chromium" tests="3" failures="0" skipped="0" time="2.604" errors="0">
+<testcase name="Arqiva website tests › Should able to navigate to main page and verify title and check breadcrumbs not present" classname="ui-tests/ui-test.spec.ts" time="0.604">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-6ae22-eck-breadcrumbs-not-present-chromium/test-finished-1.png]]
+
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-6ae22-eck-breadcrumbs-not-present-chromium/video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Arqiva website tests › Should able to Navigate to main page and select About ,Utilities, media and respective submenus validate breadcrumbs" classname="ui-tests/ui-test.spec.ts" time="1.174">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-0cc1a-bmenus-validate-breadcrumbs-chromium/test-finished-1.png]]
+
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-0cc1a-bmenus-validate-breadcrumbs-chromium/video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Arqiva website tests › Should able to Navigate main page select News and validate breadcrumbs" classname="ui-tests/ui-test.spec.ts" time="0.826">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-20053-ws-and-validate-breadcrumbs-chromium/test-finished-1.png]]
+
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-20053-ws-and-validate-breadcrumbs-chromium/video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ui-tests/ui-test.spec.ts" timestamp="2025-02-09T12:08:47.906Z" hostname="firefox" tests="3" failures="0" skipped="0" time="5.36" errors="0">
+<testcase name="Arqiva website tests › Should able to navigate to main page and verify title and check breadcrumbs not present" classname="ui-tests/ui-test.spec.ts" time="1.23">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-6ae22-eck-breadcrumbs-not-present-firefox/test-finished-1.png]]
+
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-6ae22-eck-breadcrumbs-not-present-firefox/video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Arqiva website tests › Should able to Navigate to main page and select About ,Utilities, media and respective submenus validate breadcrumbs" classname="ui-tests/ui-test.spec.ts" time="2.581">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-0cc1a-bmenus-validate-breadcrumbs-firefox/test-finished-1.png]]
+
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-0cc1a-bmenus-validate-breadcrumbs-firefox/video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Arqiva website tests › Should able to Navigate main page select News and validate breadcrumbs" classname="ui-tests/ui-test.spec.ts" time="1.549">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-20053-ws-and-validate-breadcrumbs-firefox/test-finished-1.png]]
+
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-20053-ws-and-validate-breadcrumbs-firefox/video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ui-tests/ui-test.spec.ts" timestamp="2025-02-09T12:08:47.906Z" hostname="webkit" tests="3" failures="0" skipped="0" time="3.944" errors="0">
+<testcase name="Arqiva website tests › Should able to navigate to main page and verify title and check breadcrumbs not present" classname="ui-tests/ui-test.spec.ts" time="0.999">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-6ae22-eck-breadcrumbs-not-present-webkit/test-finished-1.png]]
+
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-6ae22-eck-breadcrumbs-not-present-webkit/video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Arqiva website tests › Should able to Navigate to main page and select About ,Utilities, media and respective submenus validate breadcrumbs" classname="ui-tests/ui-test.spec.ts" time="1.758">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-0cc1a-bmenus-validate-breadcrumbs-webkit/test-finished-1.png]]
+
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-0cc1a-bmenus-validate-breadcrumbs-webkit/video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Arqiva website tests › Should able to Navigate main page select News and validate breadcrumbs" classname="ui-tests/ui-test.spec.ts" time="1.187">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-20053-ws-and-validate-breadcrumbs-webkit/test-finished-1.png]]
+
+[[ATTACHMENT|ui-tests-ui-test-Arqiva-we-20053-ws-and-validate-breadcrumbs-webkit/video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
