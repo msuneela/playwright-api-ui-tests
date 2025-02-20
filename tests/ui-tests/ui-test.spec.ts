@@ -2,9 +2,6 @@ import { test, expect } from '@playwright/test';
 import { HomePage } from '../../page-objects/home-page';
 import { CommonHelper } from '../../support/common-helper';
 import { tabs, Text } from '../../configs/config';
-type mainMenu = 'About' | 'Media' | 'Utilities';
-type subMenu = 'About Arqiva' | 'Our Media Services' | 'Our utilities services';
-
 
 test.describe('Arqiva website tests', async () => {
   let homePage: HomePage;
